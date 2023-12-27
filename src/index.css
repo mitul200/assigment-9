@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-btn { 
+  @apply px-4 py-3  font-semibold text-white rounded-xl bg-[#8B82FF]
+  hover:bg-[#4e4a8a] duration-200
+}
+
+.my-container{
+  @apply p-3 
+}

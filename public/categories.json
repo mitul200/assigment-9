@@ -1,0 +1,31 @@
+[
+    {
+        "id":1,
+        "logo":"https://media.istockphoto.com/id/1712627731/photo/concept-ai-technology-chip-ic-on-pcb-pcb-circuit-board-microprocessor-machine-learning.jpg?s=1024x1024&w=is&k=20&c=UgXjsUin7_iAH1Zf2lchw8Jm4VOg9zTamfp4X8k3PDc=",
+        "category_name":"Account & Finance",
+        "availability":"300 Jobs Available"
+
+    },
+    {
+        "id":2,
+        "logo":"https://media.istockphoto.com/id/1394092558/photo/3d-render-of-gold-coins-stacking-with-green-plant-on-white-background-with-clipping-path.jpg?s=1024x1024&w=is&k=20&c=PP27OLbSdBZYEojZL7IdfBdeOEvl2OuGZKnCh9cjk_g=",
+        "category_name":"Creative Design",
+        "availability":"100+ Jobs Available"
+
+    },
+    {
+        "id":3,
+        "logo":"https://media.istockphoto.com/id/1465316262/photo/businessman-inspecting-paperwork-document-of-business-data-analysis-working-management-report.jpg?s=1024x1024&w=is&k=20&c=4fE6KAnT4jBdMb1d1TVFOELKjKuEgkus0pJ6araaDVQ=",
+        "category_name":"Marketing & Sales",
+        "availability":"150 Jobs Available"
+
+    },
+    {
+        "id":4,
+        "logo":"https://media.istockphoto.com/id/1371766849/photo/abstract-user-interface-minimalistic-style-ui.jpg?s=1024x1024&w=is&k=20&c=PAX536ccHwdOg524mVB082cSn7zT_pyIr9R3zZdwzRw=",
+        "category_name":"Engineering Job",
+        "availability":"224 Jobs Available"
+
+    }
+
+]
