@@ -1,16 +1,26 @@
 
+import { Link } from "react-router-dom";
 import JobList from "./JobList";
 import JobsCards from "./JobsCards";
 import userPhoto from "./assets/images/user.png";
+import { useEffect, useState } from "react";
 
 // eslint-disable-next-line react/prop-types
-const Home = ({ data }) => {
+const Home = () => {
+  // const items = useLoaderData()
+  // console.log(items);
+  const [data , setData] =useState([])
+  useEffect(()=>{
+    fetch('categories.json')
+    .then(res=>res.json())
+    .then(datas => setData(datas))
+  },[])
   return (
     <div className="">
       <div className="flex justify-around mt-10 items-center">
         <h1 className=" text-2xl font-bold">Office Hub</h1>
         <div className="flex space-x-6 items-center">
-          <h3>Statistics</h3>
+          <Link to='/statictics'><h3>Statistics</h3></Link>
           <h3>Applied Jobs</h3>
           <h3>Blog</h3>
         </div>

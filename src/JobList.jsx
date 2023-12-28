@@ -2,7 +2,6 @@
 
 // eslint-disable-next-line react/prop-types
 const JobList = ({ pd }) => {
-//   console.log(pd);
   // eslint-disable-next-line react/prop-types
   const {category_name,logo,availability} = pd 
   return (

@@ -1,15 +1,15 @@
 
-import { useLoaderData } from 'react-router-dom'
+import { Outlet} from 'react-router-dom'
 import './App.css'
-import Home from './Home'
+import Footer from './Footer';
 
 function App() {
-  const data =useLoaderData()
-  console.log(data);
-
   return (
     <>
-    <Home key={data.id} data={data}></Home>
+    <Outlet></Outlet>
+    <div>
+    <Footer></Footer>
+    </div>
     </>
   )
 }

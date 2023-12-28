@@ -7,16 +7,25 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './Home.jsx';
+import ViewDetails from './ViewDetails.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:<App></App>,
-    loader:()=>fetch('categories.json'),
     children:[
       {
         path:'/',
         element:<Home></Home>,
+        loader:()=>fetch('jobs.json')
+      },
+      {
+        path:'statictics',
+        element:<statistics/>
+      },
+      {
+        path:'viewdetails',
+        element:<ViewDetails/>
       }
     ]
   },

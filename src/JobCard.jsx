@@ -1,17 +1,10 @@
 import { CurrencyDollarIcon, MapPinIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
+// eslint-disable-next-line react/prop-types
 const JobCard = ({ item }) => {
   console.log(item);
-  const {
-    id,
-    logo,
-    company_name,
-    remote_or_onsite,
-    salary,
-    job_type,
-    experiences,
-    job_title,
-    location,
-  } = item;
+  // eslint-disable-next-line react/prop-types
+  const {logo,company_name,remote_or_onsite,salary,job_type,job_title,location,} = item;
   return (
     <div>
       <div className="p-4 card card-compact w-96 bg-base-100 shadow-xl">
@@ -42,7 +35,12 @@ const JobCard = ({ item }) => {
             </div>
           </div>
           <div className="card-actions justify-end">
-            <button className="my-btn">View Details</button>
+           <button onClick={item} className="my-btn">
+           <Link to='/viewdetails'>
+           <span>View Details</span>
+           </Link>
+            </button>
+           
           </div>
         </div>
       </div>
