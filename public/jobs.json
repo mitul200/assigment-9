@@ -20,7 +20,7 @@
     },
     {
         "id": 2,
-        "logo": "https://i.ibb.co/H4wJGhb/netflix-4-1.png",
+        "logo": "https://images.unsplash.com/photo-1633793675529-58eecb6ea16f?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "job_title": "Senior Product Designer",
         "company_name": "Netflix",
         "remote_or_onsite": "Onsite",
@@ -39,7 +39,7 @@
       },
       {
         "id": 3,
-        "logo": "https://i.ibb.co/JRXgX92/tesla-9-1.png",
+        "logo": "https://images.unsplash.com/photo-1619845146106-38abf07e9c99?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "job_title": "Software Engineer",
         "company_name": "Tesla",
         "remote_or_onsite": "Onsite",
@@ -58,7 +58,7 @@
       },
       {
         "id": 4,
-        "logo": "https://i.ibb.co/PzrbTxh/google-1-1-1.png",
+        "logo": "https://media.istockphoto.com/id/1623894079/photo/graphic-designer.jpg?s=2048x2048&w=is&k=20&c=yci-DGjV-185pdR4k-7AT6-nq4hkN8i7FgWfqTetUAM=",
         "job_title": "Software Engineer",
         "company_name": "Google LLC",
         "remote_or_onsite": "Onsite",
@@ -77,7 +77,7 @@
       },
       {
         "id": 5,
-        "logo": "https://i.ibb.co/JRXgX92/tesla-9-1.png",
+        "logo": "https://images.unsplash.com/photo-1619845146106-38abf07e9c99?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "job_title": "Technical Database Engineer",
         "company_name": "Tesla",
         "remote_or_onsite": "Remote",
@@ -96,7 +96,7 @@
       },
       {
         "id": 6,
-        "logo": "https://i.ibb.co/H4wJGhb/netflix-4-1.png",
+        "logo": "https://media.istockphoto.com/id/1623894079/photo/graphic-designer.jpg?s=2048x2048&w=is&k=20&c=yci-DGjV-185pdR4k-7AT6-nq4hkN8i7FgWfqTetUAM=",
         "job_title": "Senior Product Designer",
         "company_name": "Netflix",
         "remote_or_onsite": "Remote",

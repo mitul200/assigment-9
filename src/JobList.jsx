@@ -2,9 +2,9 @@
 
 // eslint-disable-next-line react/prop-types
 const JobList = ({ pd }) => {
-  console.log(pd);
+//   console.log(pd);
   // eslint-disable-next-line react/prop-types
-  const {category_name,id,logo,availability} = pd 
+  const {category_name,logo,availability} = pd 
   return (
     <div>
       <div className="card mx-auto rounded-xl p-5 w-64 border space-y-4 bg-gray-200  bg-base-100 ">
