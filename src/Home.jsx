@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import JobList from "./JobList";
 import JobsCards from "./JobsCards";
@@ -7,21 +6,26 @@ import { useEffect, useState } from "react";
 
 // eslint-disable-next-line react/prop-types
 const Home = () => {
-  // const items = useLoaderData()
-  // console.log(items);
-  const [data , setData] =useState([])
-  useEffect(()=>{
-    fetch('categories.json')
-    .then(res=>res.json())
-    .then(datas => setData(datas))
-  },[])
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch("categories.json")
+      .then((res) => res.json())
+      .then((datas) => setData(datas));
+  }, []);
   return (
     <div className="">
       <div className="flex justify-around mt-10 items-center">
-        <h1 className=" text-2xl font-bold">Office Hub</h1>
+        <Link to="/">
+          {" "}
+          <h1 className=" text-2xl font-bold">Office Hub</h1>
+        </Link>
         <div className="flex space-x-6 items-center">
-          <Link to='/statictics'><h3>Statistics</h3></Link>
-          <h3>Applied Jobs</h3>
+          <Link to="/statictics">
+            <h3>Statistics</h3>
+          </Link>
+          <Link to="/appliedJobs">
+            <h3>Applied Jobs</h3>
+          </Link>
           <h3>Blog</h3>
         </div>
         <button className="my-btn bg-[#8B82FF]">Star Applying</button>
@@ -59,7 +63,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <JobsCards/>
+      <JobsCards />
     </div>
   );
 };

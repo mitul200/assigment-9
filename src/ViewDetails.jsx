@@ -13,7 +13,7 @@ const ViewDetails = () => {
     <div>
       <div className=" relative mt-10 items-center pt-3 pb-28 bg-gray-100">
         <div className="flex justify-around ">
-          <h1 className=" text-2xl font-bold">Office Hub</h1>
+        <Link to='/'> <h1 className=" text-2xl font-bold">Office Hub</h1></Link>
           <div className="flex space-x-6 items-center">
             <Link to="/statictics">
               <h3>Statistics</h3>

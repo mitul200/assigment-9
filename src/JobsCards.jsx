@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import JobCard from "./JobCard";
+import { addToDb } from "./utils/fakeDB";
 
 const JobsCards = () => {
   const [items, setItems] = useState([]);
@@ -8,6 +9,18 @@ const JobsCards = () => {
       .then((res) => res.json())
       .then((data) => setItems(data));
   }, []);
+
+
+const handelCkick =(id)=>{
+  // console.log(id);
+  addToDb(id)
+  
+
+}
+
+
+
+
   return (
     <div>
         <div className=" space-y-3">
@@ -16,7 +29,7 @@ const JobsCards = () => {
         </div>
       <div className=" mt-5 grid grid-cols-1 md:grid-cols-2 gap-4 p-10 mx-20 justify-items-center">
         {items.map((item) => (
-          <JobCard item={item} key={item.id}></JobCard>
+          <JobCard handelCkick={handelCkick} item={item} key={item.id}></JobCard>
         ))}
       </div>
     </div>

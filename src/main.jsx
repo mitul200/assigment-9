@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import Home from './Home.jsx';
 import ViewDetails from './ViewDetails.jsx';
+import AppliedJobs from './AppliedJobs.jsx';
+import { cardsLoderData } from './card&Jobsdata.js';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +28,11 @@ const router = createBrowserRouter([
       {
         path:'viewdetails',
         element:<ViewDetails/>
+      },
+      {
+        path:'appliedJobs',
+        element:<AppliedJobs></AppliedJobs>,
+        loader:cardsLoderData
       }
     ]
   },
