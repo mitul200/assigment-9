@@ -91,7 +91,7 @@ const ViewDetails = () => {
           <button
             className="w-full text-white rounded-xl bg-[#8B82FF]
              duration-200 font-semibold py-3 hover:bg-[#4e4a8a]"
-          >
+          >   
             Apply Now
           </button>
         </div>

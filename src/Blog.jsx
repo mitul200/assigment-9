@@ -1,6 +1,8 @@
 const Blog = () => {
   return (
-    <div className=" min-h-screen  mx-40  mt-20 space-y-20">
+    <div>
+        <h1 className="mt-10 font-semibold text-center text-4xl">Ans to Qustion 📜 </h1>
+        <div className=" min-h-screen  mx-40  mt-20 space-y-20">
       <div>
         <p className="text-xl font-semibold"> 1/what is contaxt api?</p>
         <h1>
@@ -38,6 +40,7 @@ const Blog = () => {
           render.
         </h1>
       </div>
+    </div>
     </div>
   );
 };
