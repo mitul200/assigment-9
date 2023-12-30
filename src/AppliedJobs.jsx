@@ -1,4 +1,4 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, NavLink, useLoaderData } from "react-router-dom";
 import img1 from "./assets/images/bg2.png";
 import img2 from "./assets/images/bg2.png";
 import AppliedJobCart from "./AppliedJobCart";
@@ -14,14 +14,18 @@ const AppliedJobs = () => {
             <Link to="/">
               {" "}
               <h1 className=" text-2xl font-bold">Office Hub</h1>
-            </Link>
-            <div className="flex space-x-6 items-center">
-              <Link to="/statictics">
-                <h3>Statistics</h3>
-              </Link>
-              <h3>Applied Jobs</h3>
-              <h3>Blog</h3>
-            </div>
+            </Link> 
+              <div className="flex space-x-6 items-center">
+                <NavLink title="Home" to="/" className={({isActive}) =>(isActive?'active':'default')}>
+                  <h3>Home</h3>
+                </NavLink>
+                <NavLink to="/statictics" title="Statistics" className={({isActive}) =>(isActive?'active':'default')}>
+                  <h3>Statistics</h3>
+                </NavLink>
+                <NavLink title="Blog" to="/blog" className={({isActive}) =>(isActive?'active':'default')}>
+                  <h3>Blog</h3>
+                </NavLink>
+              </div>
             <button className="my-btn bg-[#8B82FF]">Star Applying</button>
           </div>
           <h2 className=" text-center mt-24 text-2xl font-bold">
@@ -34,9 +38,11 @@ const AppliedJobs = () => {
             alt=""
           />
         </div>
-        {cartArray.map((jobCart) => (
-          <AppliedJobCart key={jobCart.id} jobCart={jobCart}></AppliedJobCart>
-        ))}
+        <div>
+          {cartArray.map((jobCart) => (
+            <AppliedJobCart key={jobCart.id} jobCart={jobCart}></AppliedJobCart>
+          ))}
+        </div>
       </div>
     </div>
   );

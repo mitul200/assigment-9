@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import JobList from "./JobList";
 import JobsCards from "./JobsCards";
 import userPhoto from "./assets/images/user.png";
 import { useEffect, useState } from "react";
+import {XMarkIcon,Bars3Icon } from '@heroicons/react/24/solid'
 
 // eslint-disable-next-line react/prop-types
 const Home = () => {
+  const [open , setOpen] = useState(false)
   const [data, setData] = useState([]);
   useEffect(() => {
     fetch("categories.json")
@@ -14,20 +16,45 @@ const Home = () => {
   }, []);
   return (
     <div className="">
+      
       <div className="flex justify-around mt-10 items-center">
         <Link to="/">
           {" "}
           <h1 className=" text-2xl font-bold">Office Hub</h1>
         </Link>
-        <div className="flex space-x-6 items-center">
-          <Link to="/statictics">
-            <h3>Statistics</h3>
-          </Link>
-          <Link to="/appliedJobs">
-            <h3>Applied Jobs</h3>
-          </Link>
-          <h3>Blog</h3>
-        </div>
+        <div className="md:flex md:space-x-2 justify-center items-center">
+          <div onClick={()=>setOpen(!open)} className="md:hidden">
+          <span>
+            {
+              open === true?<XMarkIcon className="h-8 w-8 text-blue-500" />:<Bars3Icon className="h-8 w-8 text-blue-500" />  
+            } 
+          </span>
+         </div>
+         {/* mobile device */}
+              <nav className={` md:space-x-2 justify-center items-center absolute md:hidden ${open ?' top-20':'-top-48'}`}>
+                <NavLink to="/statictics" title="Statistics" className={({isActive}) =>(isActive?'active':'default')}>
+                  <h3>Statistics</h3>
+                </NavLink>
+                <NavLink title="Applied Jobs" to='/appliedJobs' className={({isActive}) =>(isActive?'active':'default')}>
+                    <h3>Applied Jobs</h3>
+                </NavLink>
+                <NavLink title="Blog" to="/blog" className={({isActive}) =>(isActive?'active':'default')}>
+                  <h3>Blog</h3>
+                </NavLink>
+              </nav>
+              {/* big device */}
+              <nav className="min-[320px]:hidden max-[600px]:hidden md:flex md:space-x-4 justify-center items-center">
+              <NavLink to="/statictics" title="Statistics" className={({isActive}) =>(isActive?'active':'default')}>
+                  <h3>Statistics</h3>
+                </NavLink>
+                <NavLink title="Applied Jobs" to='/appliedJobs' className={({isActive}) =>(isActive?'active':'default')}>
+                    <h3>Applied Jobs</h3>
+                </NavLink>
+                <NavLink title="Blog" to="/blog" className={({isActive}) =>(isActive?'active':'default')}>
+                  <h3>Blog</h3>
+                </NavLink>
+              </nav>
+              </div>
         <button className="my-btn bg-[#8B82FF]">Star Applying</button>
       </div>
 

@@ -5,6 +5,7 @@ const JobCard = ({ item, handelCkick }) => {
   // console.log(item);
   // eslint-disable-next-line react/prop-types
   const {
+
     logo,
     company_name,
     remote_or_onsite,
@@ -43,7 +44,7 @@ const JobCard = ({ item, handelCkick }) => {
               <p>salary: {salary}</p>
             </div>
           </div>
-          <div className="card-actions justify-end">
+          <div className=" flex justify-between">
             <button className="my-btn">
               <Link to="/viewdetails">
                 <span>View Details</span>
