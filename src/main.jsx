@@ -11,6 +11,7 @@ import ViewDetails from './ViewDetails.jsx';
 import AppliedJobs from './AppliedJobs.jsx';
 import { cardsLoderData } from './card&Jobsdata.js';
 import Blog from './Blog.jsx';
+import StatisticsChart from './StatisticsChart.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,8 +24,8 @@ const router = createBrowserRouter([
         loader:()=>fetch('jobs.json')
       },
       {
-        path:'statictics',
-        element:<statistics/>
+       path:'statictics',
+       element:<StatisticsChart/>
       },
       {
         path:'viewdetails',
