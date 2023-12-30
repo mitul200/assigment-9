@@ -10,6 +10,7 @@ import Home from './Home.jsx';
 import ViewDetails from './ViewDetails.jsx';
 import AppliedJobs from './AppliedJobs.jsx';
 import { cardsLoderData } from './card&Jobsdata.js';
+import Blog from './Blog.jsx';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path:'viewdetails',
         element:<ViewDetails/>
+      },
+      {
+        path:'blog',
+        element:<Blog></Blog>
       },
       {
         path:'appliedJobs',

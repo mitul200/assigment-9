@@ -5,7 +5,6 @@ const JobCard = ({ item, handelCkick }) => {
   // console.log(item);
   // eslint-disable-next-line react/prop-types
   const {
-
     logo,
     company_name,
     remote_or_onsite,
